@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="品牌形象官網一頁式 Demo — 展示品牌定位與調性（非購物）。" />
+  <title>Brand Story / Visual Tone Demo</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body class="theme-b">
+
+<body data-theme="b">
+  <nav class="nav" aria-label="Top">
+    <div class="wrap">
+      <div class="navRow">
+        <div class="brand">
+          <div class="mark" aria-hidden="true"><span>BS</span></div>
+          <div class="brandText">
+            <b id="brandName">【品牌名稱】</b>
+            <small id="navSub">品牌形象官網｜一頁式 Demo</small>
+          </div>
+        </div>
+        <div class="navLinks" aria-label="Sections">
+          <a href="#why">Why</a>
+          <a href="#values">理念</a>
+          <a href="#gallery">圖庫</a>
+          <a href="#contact">聯絡</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" aria-label="Hero">
+    <div class="heroMedia" aria-hidden="true">
+      <video id="heroVideo" playsinline muted autoplay loop></video>
+      <img id="heroImg" alt="" />
+    </div>
+    <div class="heroShade" aria-hidden="true"></div>
+
+    <div class="wrap">
+      <div class="heroGrid">
+        <div>
+          <div class="pill">品牌感 · 留白 · 輕度動畫</div>
+          <h1 class="h1" id="heroTitle">【品牌名稱】</h1>
+          <div class="sub" id="heroLine">為了長期而設計的選擇。</div>
+          <p class="lead">
+            這是一頁式形象站 Demo（非購物），用於展示「品牌定位與調性」：
+            從 <b>品牌理念</b> 出發，延伸到 <b>產品精神</b> 與 <b>視覺呈現</b>。
+          </p>
+
+          <div class="actions">
+            <a class="btn" href="#why" id="btnWhy" data-target="#why"><span id="ctaPrimary">看品牌理念</span> →</a>
+            <a class="btn secondary" href="#gallery" id="btnGallery" data-target="#gallery"><span id="ctaSecondary">看視覺圖庫</span> ↘</a>
+          </div>
+        </div>
+
+        <aside class="heroCard fade" aria-label="Tone note">
+          <h3>語氣示例</h3>
+          <p>用少量字句，把「存在理由」說清楚；留白讓視覺說話。</p>
+          <div class="quote">「我們把最重要的事做到足夠好，讓它在時間裡成立。」</div>
+        </aside>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="why" aria-label="Why we exist">
+      <div class="wrap">
+        <div class="head">
+          <h2 id="whyTitle">Why we exist</h2>
+          <p>一句話定位：讓人知道你為何存在。</p>
+        </div>
+        <div class="block fade">
+          <p class="kicker">品牌一句話</p>
+          <div class="bigLine" id="whyLine">我們相信：長期的選擇，來自對品質、責任與一致性的堅持。</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="values" aria-label="Values">
+      <div class="wrap">
+        <div class="head">
+          <h2 id="valuesTitle">品牌理念 / 價值觀</h2>
+          <p>2–3 段即可：不要長，重點是「一致」。</p>
+        </div>
+
+        <div class="cols" id="valuesBox">
+          <!-- 這一段會被 photos.json 覆蓋（若有提供 values.paragraphs） -->
+          <article class="card fade">
+            <h3>理念</h3>
+            <p>克制，不等於保守。我們選擇把設計與工藝做到更紮實，讓產品在時間裡被驗證。</p>
+          </article>
+          <article class="card fade">
+            <h3>理念</h3>
+            <p>一致性，是信任的基礎。從材料到流程，我們只保留能被重複交付的標準。</p>
+          </article>
+          <article class="card fade">
+            <h3>理念</h3>
+            <p>我們不追求短期流行，而是建立長期可持續的品牌節奏。</p>
+          </article>
+          <article class="card fade">
+            <h3>產品精神（可選）</h3>
+            <p>（可選）若你有「產品精神」描述，也可放在這：例如耐用、可靠、簡潔、可追溯。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="gallery" aria-label="Gallery">
+      <div class="wrap">
+        <div class="head">
+          <h2 id="galleryTitle">視覺圖庫（情境圖）</h2>
+          <p>大圖、留白、節奏感：用照片拉開品牌氣質。</p>
+        </div>
+
+        <div class="gallery" id="galleryGrid">
+          <!-- 這一段會被 photos.json 覆蓋（若有提供 gallery.items） -->
+          <article class="tile fade">
+            <img src="assets/img/01.svg" alt="Gallery placeholder" loading="lazy" />
+            <div class="cap">品牌情境 / 生活方式</div>
+          </article>
+          <article class="tile fade">
+            <img src="assets/img/02.svg" alt="Gallery placeholder" loading="lazy" />
+            <div class="cap">材質細節 / 觸感</div>
+          </article>
+          <article class="tile fade">
+            <img src="assets/img/03.svg" alt="Gallery placeholder" loading="lazy" />
+            <div class="cap">工藝 / 製程片段</div>
+          </article>
+          <article class="tile fade">
+            <img src="assets/img/04.svg" alt="Gallery placeholder" loading="lazy" />
+            <div class="cap">使用場景 / 空間</div>
+          </article>
+          <article class="tile fade">
+            <img src="assets/img/05.svg" alt="Gallery placeholder" loading="lazy" />
+            <div class="cap">產品精神 / 氣質</div>
+          </article>
+          <article class="tile fade">
+            <img src="assets/img/06.svg" alt="Gallery placeholder" loading="lazy" />
+            <div class="cap">品牌視覺 / 留白</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-label="Contact">
+      <div class="wrap">
+        <div class="head">
+          <h2 id="contactTitle">品牌聯絡方式</h2>
+          <p>不需要表單：只要讓對方知道要提供什麼資訊。</p>
+        </div>
+
+        <div class="block fade">
+          <div id="contactHint">
+            請附上：需求背景、使用情境、時程、預算區間與聯絡方式。我們會在 1–2 個工作天內回覆。
+          </div>
+          <div style="margin-top:10px;">
+            Email：<a id="contactEmail" class="mono" href="mailto:your-email@example.com">your-email@example.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" aria-label="Footer">
+    <div class="wrap">
+      <div class="footerRow">
+        <div>© <span id="year"></span> Brand Story Demo</div>
+        <div class="mono">Visual tone first · light motion</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>

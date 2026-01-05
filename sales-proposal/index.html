@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sales Proposal / Go-NoGo Demo</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body data-theme="c">
+<body class="theme-c">
+
+  <nav class="nav">
+    <div class="wrap">
+      <div class="navRow">
+        <div class="brand">
+          <div class="badge" aria-hidden="true"><b>SP</b></div>
+          <div class="brandText">
+            <b id="pName">【公司 / 方案名稱】</b>
+            <small id="pSub">業務提案 Demo｜Go / No-Go 快速溝通</small>
+          </div>
+        </div>
+        <div class="links">
+          <a href="#problems">問題</a>
+          <a href="#approach">解法</a>
+          <a href="#proof">證據</a>
+          <a href="#next">下一步</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" aria-label="Hero">
+    <div class="heroMedia" aria-hidden="true">
+      <img id="heroImg" src="assets/img/hero-placeholder.svg" alt="" />
+    </div>
+    <div class="heroShade" aria-hidden="true"></div>
+
+    <div class="wrap">
+      <div class="heroGrid">
+        <div>
+          <div class="pill">清楚 · 直接 · 務實</div>
+          <h1 class="h1" id="heroTitle">【公司 / 方案名稱】</h1>
+          <div class="sub" id="heroLine">快速、穩定、可落地的解決方案。</div>
+          <p class="lead">
+            這是一頁式「業務提案 Demo」，用來把資訊講清楚、把風險降到最低：<b>問題 → 解法 → 能力 → 是否合作</b>。
+            不是最終網站，也不做 SEO，目的就是讓客戶在短時間內做 <b>go / no-go</b>。
+          </p>
+
+          <div class="actions">
+            <a class="btn" href="#approach" data-target="#approach"><span id="cta1">看我們怎麼做</span> →</a>
+            <a class="btn secondary" href="#next" data-target="#next"><span id="cta2">看下一步</span> ↘</a>
+          </div>
+
+          <div class="small" style="margin-top:10px;">交付形式：純前端（HTML/CSS/JS），可直接部署 GitHub Pages。</div>
+        </div>
+
+        <aside class="side" aria-label="Go/No-Go checklist">
+          <h3>快速判斷清單（示例）</h3>
+          <ul>
+            <li>核心問題是否命中？</li>
+            <li>解法是否可落地（時間/成本/資源）？</li>
+            <li>證據是否足夠可信？</li>
+            <li>下一步是否清楚（範圍/時程/責任）？</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="problems">
+      <div class="wrap">
+        <div class="head">
+          <h2 id="problemsTitle">我們解決什麼問題</h2>
+          <p>先對焦痛點：講清楚，才有後續。</p>
+        </div>
+
+        <div class="grid" id="problemsGrid">
+          <div class="card"><h3>溝通成本高</h3><p>需求講不清、反覆改、耗時耗人。</p></div>
+          <div class="card"><h3>交付不穩</h3><p>每次品質不一致，結果難以複製。</p></div>
+          <div class="card"><h3>決策拖太久</h3><p>缺少可比對的方案與明確下一步。</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="approach">
+      <div class="wrap">
+        <div class="head">
+          <h2 id="approachTitle">我們怎麼做（流程 / 能力）</h2>
+          <p>用固定流程把結果做穩。</p>
+        </div>
+
+        <div class="steps" id="stepsGrid">
+          <div class="step"><b>1. 30 分鐘對焦</b><p>確認目標、限制、成功標準（go/no-go 依據）。</p></div>
+          <div class="step"><b>2. 48 小時 Demo</b><p>交付可操作的一頁式 Demo（不是 PPT）。</p></div>
+          <div class="step"><b>3. 一輪收斂</b><p>針對關鍵假設調整內容與節奏。</p></div>
+          <div class="step"><b>4. 決策與排程</b><p>確認範圍、時程、責任分工，進入正式製作。</p></div>
+        </div>
+
+        <div style="height:12px"></div>
+
+        <div class="listBox">
+          <div class="head" style="margin:0 0 10px;">
+            <h2 style="font-size:16px; margin:0;">能力清單（示例）</h2>
+            <p style="margin:0;" class="small">你可直接改 photos.json 內容。</p>
+          </div>
+          <ul id="capsList">
+            <li>一頁式形象/提案 Demo（GitHub Pages 可部署）</li>
+            <li>資訊架構與提案節奏（讓客戶看完就懂）</li>
+            <li>素材/文案整理與快速版本迭代</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="proof">
+      <div class="wrap">
+        <div class="head">
+          <h2 id="proofTitle">成果或實拍（Proof）</h2>
+          <p>不需要多，4 張就夠：重點是「可信」。</p>
+        </div>
+
+        <div class="proof" id="proofGrid">
+          <article class="tile"><img src="assets/img/01.svg" alt="proof" loading="lazy"><div class="cap">案例 / 成果截圖</div></article>
+          <article class="tile"><img src="assets/img/02.svg" alt="proof" loading="lazy"><div class="cap">實拍 / 現場照片</div></article>
+          <article class="tile"><img src="assets/img/03.svg" alt="proof" loading="lazy"><div class="cap">流程輸出 / 文件片段</div></article>
+          <article class="tile"><img src="assets/img/04.svg" alt="proof" loading="lazy"><div class="cap">客戶回饋 / 指標</div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="next">
+      <div class="wrap">
+        <div class="head">
+          <h2 id="nextTitle">下一步合作方式</h2>
+          <p>把「下一步」寫清楚，決策就快。</p>
+        </div>
+
+        <div class="two" id="choices">
+          <div class="choice">
+            <h3>A. 先做 Demo（低風險）</h3>
+            <p>先做一頁式 Demo，確認方向與節奏，再決定是否進入正式製作。</p>
+          </div>
+          <div class="choice">
+            <h3>B. 直接進正式案（熟客）</h3>
+            <p>已確認需求與素材完整，直接進入正式製作與交付。</p>
+          </div>
+        </div>
+
+        <div style="height:12px"></div>
+
+        <div class="listBox">
+          <div class="head" style="margin:0 0 10px;">
+            <h2 style="font-size:16px; margin:0;">你只要提供這些資訊</h2>
+            <p style="margin:0;" class="small">能把溝通壓到最短。</p>
+          </div>
+          <ul id="askList">
+            <li>你要達成的目標（1 句話）</li>
+            <li>目標客群與使用情境</li>
+            <li>你手上的素材（照片/影片/LOGO/文案）</li>
+            <li>期望上線時間與預算區間</li>
+          </ul>
+          <div style="margin-top:10px;">Email：<a id="contactEmail" class="mono" href="mailto:your-email@example.com">your-email@example.com</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footerRow">
+        <div>© <span id="year"></span> Sales Proposal Demo</div>
+        <div class="mono">Problem → Approach → Proof → Next</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,299 @@
+/* ===== Page Theme Control ===== */
+
+body.theme-a {
+  --page-bg: linear-gradient(135deg, #0e2a1f, #0b1410);
+  --accent: #3fbf7f;
+}
+
+body.theme-b {
+  --page-bg: linear-gradient(135deg, #221833, #120c1f);
+  --accent: #8b6cff;
+}
+
+body.theme-c {
+  --page-bg: linear-gradient(135deg, #0f2235, #08121e);
+  --accent: #4fa3ff;
+}
+
+body.theme-d {
+  --page-bg: linear-gradient(135deg, #2a1f12, #14100b);
+  --accent: #ffb84d;
+}
+
+/* 套用到整頁 */
+body {
+  background: var(--page-bg);
+}
+
+/* 套用到標籤 / 按鈕 / 重點 */
+.badge,
+.button-primary {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+:root{
+  --bg:#0b0f14;
+  --text:#e9eef6;
+  --muted:#a6b3c2;
+  --line:rgba(255,255,255,.10);
+  --card:rgba(18,24,32,.55);
+  --shadow: 0 12px 34px rgba(0,0,0,.40);
+  --radius: 22px;
+  --radius2: 30px;
+  --max: 1120px;
+}
+/* =========================
+   THEME TOKENS (A/B/C/D)
+   ========================= */
+:root{
+  --accent:#2563eb;
+  --accent2:#14b8a6;
+  --bg:#f6f8fb;
+}
+
+/* A: OEM 工廠（綠） */
+body[data-theme="a"]{ --accent:#22c55e; --accent2:#a3e635; }
+/* B: 品牌形象（紫粉） */
+body[data-theme="b"]{ --accent:#a855f7; --accent2:#f472b6; }
+/* C: 業務提案（藍青） */
+body[data-theme="c"]{ --accent:#3b82f6; --accent2:#06b6d4; }
+/* D: MVP 驗證（橘紅） */
+body[data-theme="d"]{ --accent:#f59e0b; --accent2:#fb7185; }
+
+/* =========================
+   BACKGROUND TINT (避免單一暗色)
+   貼一次就能看到「氛圍色」差異
+   ========================= */
+body{
+  background:
+    radial-gradient(900px 560px at 18% 16%, color-mix(in srgb, var(--accent) 12%, transparent), transparent 60%),
+    radial-gradient(900px 560px at 82% 18%, color-mix(in srgb, var(--accent2) 10%, transparent), transparent 60%),
+    var(--bg);
+}
+
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  color:var(--text);
+  background:
+    radial-gradient(900px 560px at 18% 15%, rgba(200,215,255,.14), transparent 60%),
+    radial-gradient(900px 560px at 82% 18%, rgba(212,255,243,.10), transparent 60%),
+    radial-gradient(900px 560px at 50% 100%, rgba(99,102,241,.06), transparent 60%),
+    var(--bg);
+  line-height:1.65;
+}
+a{color:inherit; text-decoration:none}
+.wrap{max-width:var(--max); margin:0 auto; padding:0 18px}
+.mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;}
+
+.nav{
+  position:sticky; top:0; z-index:50;
+  backdrop-filter: blur(14px);
+  background: rgba(11,15,20,.50);
+  border-bottom:1px solid var(--line);
+}
+.navRow{display:flex; justify-content:space-between; align-items:center; padding:14px 0; gap:12px}
+.brand{display:flex; align-items:center; gap:12px}
+.mark{
+  width:40px; height:40px; border-radius:16px;
+  background: linear-gradient(135deg, rgba(255,255,255,.12), rgba(255,255,255,.06));
+  border:1px solid rgba(16,24,40,.12);
+  display:grid; place-items:center;
+}
+.mark span{font-weight:800; letter-spacing:.6px}
+.brandText b{display:block; font-size:14px; letter-spacing:.2px}
+.brandText small{display:block; color:var(--muted); font-size:12px; margin-top:2px}
+.navLinks{display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end}
+.navLinks a{
+  padding:8px 10px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  color:var(--muted);
+  font-size:13px;
+  background: rgba(18,24,32,.30);
+}
+.navLinks a:hover{border-color: rgba(255,255,255,.22); color: var(--text)}
+
+.hero{
+  position:relative;
+  min-height: 72vh;
+  padding: 62px 0 40px;
+  overflow:hidden;
+}
+.heroMedia{position:absolute; inset:0; z-index:-2}
+.heroMedia video,.heroMedia img{
+  position:absolute; inset:0;
+  width:100%; height:100%;
+  object-fit:cover;
+  transition: opacity .35s ease;
+}
+.heroShade{
+  position:absolute; inset:0; z-index:-1;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.75) 0%, rgba(11,15,20,.72) 55%, rgba(11,15,20,.92) 100%),
+    radial-gradient(900px 520px at 22% 20%, rgba(200,215,255,.14), transparent 60%),
+    radial-gradient(900px 520px at 78% 18%, rgba(212,255,243,.10), transparent 60%);
+}
+.heroGrid{
+  display:grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap:18px;
+  align-items:end;
+}
+.pill{
+  display:inline-flex; align-items:center; gap:8px;
+  padding:9px 12px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  background: rgba(18,24,32,.46);
+  color:var(--muted);
+  font-size:13px;
+  width:fit-content;
+}
+.h1{
+  margin:14px 0 10px;
+  font-size: clamp(34px, 5.0vw, 56px);
+  letter-spacing:-.6px;
+  line-height:1.05;
+}
+.sub{
+  margin:0 0 14px;
+  font-size: clamp(18px, 2.2vw, 22px);
+  color: rgba(233,238,246,.92);
+  font-weight:650;
+}
+.lead{margin:0; color: var(--muted); font-size: 15px; max-width: 70ch}
+.actions{margin-top:18px; display:flex; gap:10px; flex-wrap:wrap}
+.btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:10px;
+  padding:12px 14px;
+  border-radius: 16px;
+  border:1px solid var(--line);
+  background: rgba(18,24,32,.66);
+  box-shadow: var(--shadow);
+  font-size:14px;
+  transition: transform .15s ease, border-color .15s ease;
+}
+.btn:hover{transform: translateY(-1px); border-color: rgba(255,255,255,.22)}
+.btn.secondary{background: transparent; box-shadow:none; color: var(--muted)}
+.btn.secondary:hover{color:var(--text)}
+
+.heroCard{
+  border:1px solid var(--line);
+  border-radius: var(--radius2);
+  background: rgba(18,24,32,.56);
+  backdrop-filter: blur(12px);
+  box-shadow: var(--shadow);
+  padding: 16px;
+}
+.heroCard h3{margin:0 0 10px; font-size:16px}
+.heroCard p{margin:0; color:var(--muted); font-size:13px}
+.quote{
+  margin-top:12px;
+  padding: 12px 12px 10px;
+  border:1px solid rgba(16,24,40,.12);
+  border-radius: 16px;
+  background: rgba(0,0,0,.14);
+  color: rgba(233,238,246,.88);
+  font-size: 14px;
+}
+.section{padding: 44px 0}
+.head{
+  display:flex; align-items:baseline; justify-content:space-between; gap:14px; flex-wrap:wrap;
+  margin-bottom: 14px;
+}
+.head h2{margin:0; font-size: 18px; letter-spacing:-.2px}
+.head p{margin:0; color:var(--muted); font-size: 13px}
+.block{
+  border:1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(18,24,32,.42);
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow);
+  padding: 18px;
+}
+.kicker{color:var(--muted); font-size:13px; margin:0}
+.bigLine{
+  margin:10px 0 0;
+  font-size: clamp(22px, 3.2vw, 34px);
+  letter-spacing:-.4px;
+  line-height:1.12;
+}
+.cols{display:grid; grid-template-columns: repeat(12, 1fr); gap: 12px}
+.card{
+  grid-column: span 6;
+  border:1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(18,24,32,.44);
+  padding: 16px;
+  box-shadow: var(--shadow);
+}
+.card h3{margin:0 0 8px; font-size: 16px}
+.card p{margin:0; color:var(--muted); font-size: 13px}
+
+.gallery{display:grid; grid-template-columns: repeat(12, 1fr); gap: 12px}
+.tile{
+  grid-column: span 4;
+  border:1px solid var(--line);
+  border-radius: var(--radius);
+  overflow:hidden;
+  background: rgba(18,24,32,.32);
+  box-shadow: var(--shadow);
+}
+.tile img{display:block; width:100%; height: 240px; object-fit:cover}
+.tile .cap{padding: 10px 12px; color: var(--muted); font-size: 13px}
+
+.footer{padding: 26px 0 36px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px}
+.footerRow{display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; align-items:center}
+
+.fade{opacity:0; transform: translateY(10px); transition: opacity .65s ease, transform .65s ease}
+.fade.in{opacity:1; transform:none}
+
+@media (max-width: 900px){
+  .heroGrid{grid-template-columns: 1fr; align-items:start}
+  .navLinks{display:none}
+  .card{grid-column: span 12}
+  .tile{grid-column: span 12}
+  .tile img{height: 220px}
+}
+/* =========================
+   ACCENT HOOKS
+   ========================= */
+
+/* Buttons */
+.btn,
+button{
+  border-color: color-mix(in srgb, var(--accent) 28%, white 0%);
+}
+.btn:hover,
+button:hover{
+  border-color: color-mix(in srgb, var(--accent) 55%, white 0%);
+}
+
+/* Pills / tags（如果你沒有 .pill 也沒關係，不影響） */
+.pill,
+.tag,
+.badge{
+  border-color: color-mix(in srgb, var(--accent) 35%, white 0%);
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+}
+
+/* Section title underline（如果你有 .section__title 就會吃到） */
+.section__title::after{
+  content:"";
+  display:block;
+  width:56px;
+  height:2px;
+  margin-top:10px;
+  background: color-mix(in srgb, var(--accent) 75%, transparent);
+  border-radius:999px;
+}
+
+
+
+/* THEME OVERRIDE (added) */
+body{background: var(--page-bg) !important;}

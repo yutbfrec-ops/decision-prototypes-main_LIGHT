@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="OEM / 製造工廠形象頁 Demo — 用於快速 go / no-go 判斷。" />
+  <title>Factory / OEM Capability Demo</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<div class="demoCard theme-a">
+<body class="theme-a">
+
+  <body data-theme="a">
+  <a class="skip" href="#main">跳到主要內容</a>
+
+  <nav class="nav" aria-label="Top">
+    <div class="wrap">
+      <div class="navRow">
+        <div class="brand">
+          <div class="badge" aria-hidden="true"><span>JT</span></div>
+          <div class="brandText">
+            <b id="brandName">【工廠名稱】</b>
+            <small>OEM／ODM 製造｜形象站 Demo</small>
+          </div>
+        </div>
+        <div class="navLinks" aria-label="Sections">
+          <a href="#capabilities">工廠能力</a>
+          <a href="#gallerySec">現場照片</a>
+          <a href="#coop">合作方式</a>
+          <a href="#contact">聯絡</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" aria-label="Hero">
+    <div class="heroMedia" aria-hidden="true">
+      <video id="heroVideo" playsinline muted autoplay loop></video>
+      <img class="heroImg" id="heroImg" alt="" />
+    </div>
+    <div class="heroOverlay" aria-hidden="true"></div>
+
+    <div class="wrap">
+      <div class="heroGrid">
+        <div>
+          <div class="pill" id="heroPill">OEM／ODM 製造｜品質穩定｜交期可控</div>
+          <h1 class="h1" id="heroTitle">【工廠名稱】</h1>
+          <div class="h2" id="heroSub">用可靠的製程，做出一致的產品。</div>
+          <p class="lead">
+            這是一頁式形象站 Demo（非購物頁），用於讓潛在客戶快速理解：你們擅長的工序、品質控制方式、與合作門檻。
+            看完即可做 <b>go / no-go</b> 判斷，避免前期溝通拉長。
+          </p>
+
+          <div class="heroActions">
+            <a class="btn" href="#capabilities" id="toCapabilities" data-target="#capabilities">看工廠能力 →</a>
+            <a class="btn secondary" href="#gallerySec" id="toGallery" data-target="#gallerySec">看現場照片 ↘</a>
+            <a class="btn secondary" href="#coop" id="toCoop" data-target="#coop">合作方式 ↘</a>
+          </div>
+        </div>
+
+        <aside class="heroCard fadeUp" aria-label="Quick facts">
+          <h3 style="margin:0 0 8px; font-size:16px;">快速判斷重點</h3>
+          <p style="margin:0; color:var(--muted); font-size:13px;">
+            這張卡片讓客戶 30 秒內抓到：你們是否符合他的基本條件。數字可在正式版補齊。
+          </p>
+          <div class="kpiRow" aria-label="KPIs">
+            <div class="kpi">
+              <b>MOQ</b>
+              <small>依產品/工序（例：500–3000）</small>
+            </div>
+            <div class="kpi">
+              <b>Lead Time</b>
+              <small>例：15–35 天（含打樣）</small>
+            </div>
+            <div class="kpi">
+              <b>QC</b>
+              <small>IQC / IPQC / OQC</small>
+            </div>
+          </div>
+          <div class="mini" aria-label="Capabilities tags">
+            <span class="chip">客製規格</span>
+            <span class="chip">穩定批次</span>
+            <span class="chip">可追溯</span>
+            <span class="chip">合規資料</span>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section" id="capabilities" aria-label="Capabilities">
+      <div class="wrap">
+        <div class="sectionTitle">
+          <h3>工廠能力 / 製程說明</h3>
+          <p>用「實力」說話：工序、設備、品質、交期 — 讓客戶快速決策。</p>
+        </div>
+
+        <div class="cards">
+          <article class="card fadeUp">
+            <h4>核心工序（3–4 點）</h4>
+            <p>把你們最有把握、最可量化的工序放上來（避免大而空）。</p>
+            <ul class="list">
+              <li>加工/分切/塗佈/貼合（依實際）</li>
+              <li>規格客製：尺寸、材質、黏性、包裝</li>
+              <li>批次一致性：關鍵參數控管</li>
+              <li>打樣與量產切換：流程標準化</li>
+            </ul>
+          </article>
+
+          <article class="card fadeUp">
+            <h4>品質管理（QC）</h4>
+            <p>以流程呈現：不是「有 QC」，而是「怎麼做 QC」。</p>
+            <ul class="list">
+              <li>IQC：來料檢驗（關鍵材料）</li>
+              <li>IPQC：製程巡檢（抽檢頻率）</li>
+              <li>OQC：出貨檢驗（AQL/外觀/尺寸）</li>
+              <li>追溯：批號、工單、留樣</li>
+            </ul>
+          </article>
+
+          <article class="card fadeUp">
+            <h4>交期與產能</h4>
+            <p>客戶要的是「可預期」。你可以用區間呈現。</p>
+            <ul class="list">
+              <li>打樣：例 7–14 天（視複雜度）</li>
+              <li>量產：例 15–35 天（視排程）</li>
+              <li>產能：例 每月 X 萬件 / X 噸</li>
+            </ul>
+          </article>
+
+          <article class="card fadeUp">
+            <h4>合規與文件</h4>
+            <p>若你的客戶在歐美市場，文件透明度會大幅提高信任。</p>
+            <ul class="list">
+              <li>材質/成分說明、MSDS（若適用）</li>
+              <li>RoHS / REACH（若適用）</li>
+              <li>包裝規範、條碼/標籤要求</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="gallerySec" aria-label="Gallery">
+      <div class="wrap">
+        <div class="sectionTitle">
+          <h3>現場照片 / 產品展示（約 6 張）</h3>
+          <p>實拍優先：設備、產線、QC、包裝、倉儲、產品細節。</p>
+        </div>
+
+        <div class="gallery" id="gallery">
+          <article class="tile fadeUp">
+            <img src="assets/img/01.svg" alt="Photo placeholder" loading="lazy">
+            <div class="cap">產線設備 / 工序展示</div>
+          </article>
+          <article class="tile fadeUp">
+            <img src="assets/img/02.svg" alt="Photo placeholder" loading="lazy">
+            <div class="cap">分切 / 組裝 / 加工</div>
+          </article>
+          <article class="tile fadeUp">
+            <img src="assets/img/03.svg" alt="Photo placeholder" loading="lazy">
+            <div class="cap">品質檢驗 / QC</div>
+          </article>
+          <article class="tile fadeUp">
+            <img src="assets/img/04.svg" alt="Photo placeholder" loading="lazy">
+            <div class="cap">包裝與貼標</div>
+          </article>
+          <article class="tile fadeUp">
+            <img src="assets/img/05.svg" alt="Photo placeholder" loading="lazy">
+            <div class="cap">倉儲與出貨</div>
+          </article>
+          <article class="tile fadeUp">
+            <img src="assets/img/06.svg" alt="Photo placeholder" loading="lazy">
+            <div class="cap">產品細節特寫</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="coop" aria-label="Cooperation">
+      <div class="wrap">
+        <div class="sectionTitle">
+          <h3>合作方式（OEM / ODM / MOQ）</h3>
+          <p>用清楚的條件與流程，降低「來回問答」成本。</p>
+        </div>
+
+        <div class="split">
+          <div class="note fadeUp">
+            <b>合作範圍</b>
+            <div class="mini" style="margin-top:10px">
+              <span class="chip">OEM 代工</span>
+              <span class="chip">ODM 開發（可選）</span>
+              <span class="chip">客製包裝</span>
+              <span class="chip">打樣 → 量產</span>
+            </div>
+            <p style="margin:12px 0 0;">
+              建議把「你們真的能做、且做得穩」的項目寫清楚，避免承諾過度。
+            </p>
+          </div>
+
+          <div class="note fadeUp">
+            <b>基本門檻（示例）</b>
+            <ul class="list" style="margin-top:10px">
+              <li><b>MOQ：</b>依產品/工序（例 500–3000）</li>
+              <li><b>打樣：</b>例 7–14 天（視規格）</li>
+              <li><b>量產交期：</b>例 15–35 天（視排程）</li>
+              <li><b>付款：</b>訂金 + 尾款（依實際）</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-label="Contact">
+      <div class="wrap">
+        <div class="sectionTitle">
+          <h3>聯絡提示（不需表單）</h3>
+          <p>讓客戶知道「提供什麼資訊」才能快速回覆報價/可行性。</p>
+        </div>
+
+        <div class="note fadeUp">
+          <div id="contactHint">
+            想快速確認是否適合合作？請提供：產品類型、規格/用途、預估月量、目標市場。
+          </div>
+          <div style="margin-top:10px;">
+            Email：<a id="contactEmail" class="mono" href="mailto:your-email@example.com">your-email@example.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" aria-label="Footer">
+    <div class="wrap">
+      <div class="footerRow">
+        <div>© <span id="year"></span> Factory / OEM Demo</div>
+        <div class="mono">Built for go / no-go decision</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

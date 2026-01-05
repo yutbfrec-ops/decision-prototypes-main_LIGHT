@@ -1,0 +1,42 @@
+{
+  "brand": {
+    "name": "【品牌名稱】",
+    "subtitle": "品牌形象官網｜一頁式 Demo",
+    "hero_line": "為了長期而設計的選擇。",
+    "cta_primary": "看品牌理念",
+    "cta_secondary": "看視覺圖庫"
+  },
+  "hero": {
+    "image": "assets/img/hero-placeholder.svg",
+    "video_mp4": "assets/video/hero.mp4",
+    "video_webm": "assets/video/hero.webm"
+  },
+  "why": {
+    "title": "Why we exist",
+    "one_liner": "我們相信：長期的選擇，來自對品質、責任與一致性的堅持。"
+  },
+  "values": {
+    "title": "品牌理念 / 價值觀",
+    "paragraphs": [
+      "克制，不等於保守。我們選擇把設計與工藝做到更紮實，讓產品在時間裡被驗證。",
+      "一致性，是信任的基礎。從材料到流程，我們只保留能被重複交付的標準。",
+      "我們不追求短期流行，而是建立長期可持續的品牌節奏。"
+    ]
+  },
+  "gallery": {
+    "title": "視覺圖庫（情境圖）",
+    "items": [
+      { "src": "assets/img/01.svg", "caption": "品牌情境 / 生活方式" },
+      { "src": "assets/img/02.svg", "caption": "材質細節 / 觸感" },
+      { "src": "assets/img/03.svg", "caption": "工藝 / 製程片段" },
+      { "src": "assets/img/04.svg", "caption": "使用場景 / 空間" },
+      { "src": "assets/img/05.svg", "caption": "產品精神 / 氣質" },
+      { "src": "assets/img/06.svg", "caption": "品牌視覺 / 留白" }
+    ]
+  },
+  "contact": {
+    "title": "品牌聯絡方式",
+    "hint": "請附上：需求背景、使用情境、時程、預算區間與聯絡方式。我們會在 1–2 個工作天內回覆。",
+    "email": "your-email@example.com"
+  }
+}

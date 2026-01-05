@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+  <defs>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101723"/>
+      <stop offset="1" stop-color="#0b2230"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1200" fill="url(#g2)"/>
+  <g fill="#e8eef6" opacity=".28" font-family="ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial" letter-spacing=".4">
+    <text x="70" y="120" font-size="34">Photo 02 Placeholder</text>
+    <text x="70" y="170" font-size="18" opacity=".8">Replace with factory / product photo</text>
+  </g>
+  <g fill="none" stroke="#ffffff" opacity=".10">
+    <rect x="70" y="240" width="1060" height="820" rx="24" stroke-width="2"/>
+  </g>
+</svg>

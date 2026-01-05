@@ -1,0 +1,24 @@
+{
+  "brand": {
+    "name": "【工廠名稱】",
+    "tagline": "用可靠的製程，做出一致的產品。",
+    "subtitle": "OEM／ODM 製造｜品質穩定｜交期可控"
+  },
+  "hero": {
+    "image": "assets/img/hero-placeholder.svg",
+    "video_mp4": "assets/video/hero.mp4",
+    "video_webm": "assets/video/hero.webm"
+  },
+  "gallery": [
+    { "src": "assets/img/01.svg", "caption": "產線設備 / 工序展示" },
+    { "src": "assets/img/02.svg", "caption": "分切 / 組裝 / 加工" },
+    { "src": "assets/img/03.svg", "caption": "品質檢驗 / QC" },
+    { "src": "assets/img/04.svg", "caption": "包裝與貼標" },
+    { "src": "assets/img/05.svg", "caption": "倉儲與出貨" },
+    { "src": "assets/img/06.svg", "caption": "產品細節特寫" }
+  ],
+  "contact": {
+    "hint": "想快速確認是否適合合作？請提供：產品類型、規格/用途、預估月量、目標市場。",
+    "email": "your-email@example.com"
+  }
+}

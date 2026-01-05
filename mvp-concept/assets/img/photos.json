@@ -1,0 +1,63 @@
+{
+  "mvp": {
+    "name": "【產品 / 概念名稱】",
+    "one_liner": "一句話講清楚：這是什麼（用戶看 3 秒能懂）。",
+    "for_who": "為誰：例如「跨境賣家 / 工廠業務 / 採購」",
+    "cta": "留下聯絡 / 取得試用"
+  },
+  "hero": {
+    "image": "assets/img/hero-placeholder.svg"
+  },
+  "scenes": {
+    "title": "使用場景",
+    "items": [
+      {
+        "title": "場景 1",
+        "desc": "在什麼時候、什麼人、遇到什麼問題？"
+      },
+      {
+        "title": "場景 2",
+        "desc": "目前怎麼做？哪裡卡？"
+      },
+      {
+        "title": "場景 3",
+        "desc": "這個概念介入後，流程怎麼變？"
+      }
+    ]
+  },
+  "value": {
+    "title": "核心價值 / 差異",
+    "bullets": [
+      "更快：把原本 1 小時變 5 分鐘",
+      "更穩：降低錯誤與返工",
+      "更清楚：讓決策依據一致"
+    ]
+  },
+  "gallery": {
+    "title": "示意圖 / 情境圖",
+    "items": [
+      {
+        "src": "assets/img/01.svg",
+        "caption": "示意 1：主流程 / 介面概念"
+      },
+      {
+        "src": "assets/img/02.svg",
+        "caption": "示意 2：使用情境 / 場景"
+      },
+      {
+        "src": "assets/img/03.svg",
+        "caption": "示意 3：輸出結果 / 報表"
+      }
+    ]
+  },
+  "next": {
+    "title": "下一步",
+    "note": "這是 MVP 概念頁，用來測試市場反應；內容可隨時丟棄重做。",
+    "ask": [
+      "你是否有相同痛點？（是/否）",
+      "你願意試用或看 Demo 嗎？",
+      "你希望先解決哪一段流程？"
+    ],
+    "contact_email": "your-email@example.com"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "proposal": {
+    "name": "【公司 / 方案名稱】",
+    "subtitle": "業務提案 Demo｜Go / No-Go 快速溝通",
+    "hero_line": "快速、穩定、可落地的解決方案。",
+    "cta_primary": "看我們怎麼做",
+    "cta_secondary": "看下一步"
+  },
+  "hero": {
+    "image": "assets/img/hero-placeholder.svg"
+  },
+  "problems": {
+    "title": "我們解決什麼問題",
+    "items": [
+      {
+        "title": "溝通成本高",
+        "desc": "需求講不清、反覆改、耗時耗人。"
+      },
+      {
+        "title": "交付不穩",
+        "desc": "每次品質不一致，結果難以複製。"
+      },
+      {
+        "title": "決策拖太久",
+        "desc": "缺少可比對的方案與明確下一步。"
+      }
+    ]
+  },
+  "approach": {
+    "title": "我們怎麼做（流程 / 能力）",
+    "steps": [
+      {
+        "title": "30 分鐘對焦",
+        "desc": "確認目標、限制、成功標準（go/no-go 依據）。"
+      },
+      {
+        "title": "48 小時 Demo",
+        "desc": "交付可操作的一頁式 Demo（不是 PPT）。"
+      },
+      {
+        "title": "一輪收斂",
+        "desc": "針對關鍵假設調整內容與節奏。"
+      },
+      {
+        "title": "決策與排程",
+        "desc": "確認範圍、時程、責任分工，進入正式製作。"
+      }
+    ],
+    "capabilities": [
+      "一頁式形象/提案 Demo（GitHub Pages 可部署）",
+      "資訊架構與提案節奏（讓客戶看完就懂）",
+      "素材/文案整理與快速版本迭代"
+    ]
+  },
+  "proof": {
+    "title": "成果或實拍（Proof）",
+    "items": [
+      {
+        "src": "assets/img/01.svg",
+        "caption": "案例 / 成果截圖"
+      },
+      {
+        "src": "assets/img/02.svg",
+        "caption": "實拍 / 現場照片"
+      },
+      {
+        "src": "assets/img/03.svg",
+        "caption": "流程輸出 / 文件片段"
+      },
+      {
+        "src": "assets/img/04.svg",
+        "caption": "客戶回饋 / 指標"
+      }
+    ]
+  },
+  "next": {
+    "title": "下一步合作方式",
+    "choices": [
+      {
+        "title": "A. 先做 Demo（低風險）",
+        "desc": "先做一頁式 Demo，確認方向與節奏，再決定是否進入正式製作。"
+      },
+      {
+        "title": "B. 直接進正式案（熟客）",
+        "desc": "已確認需求與素材完整，直接進入正式製作與交付。"
+      }
+    ],
+    "ask": [
+      "你要達成的目標（1 句話）",
+      "目標客群與使用情境",
+      "你手上的素材（照片/影片/LOGO/文案）",
+      "期望上線時間與預算區間"
+    ],
+    "contact_email": "your-email@example.com"
+  }
+}
