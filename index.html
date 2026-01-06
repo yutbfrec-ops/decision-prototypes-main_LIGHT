@@ -186,45 +186,50 @@
   </style>
 
 <style>
-/* ===== Catalog cards theme (LIGHT FIX) ===== */
+/* ===== Catalog cards theme ===== */
+.demoCard.theme-a{ --accent:#22c55e; --accent2:#a3e635; }
+.demoCard.theme-b{ --accent:#a855f7; --accent2:#f472b6; }
+.demoCard.theme-c{ --accent:#3b82f6; --accent2:#06b6d4; }
+.demoCard.theme-d{ --accent:#f59e0b; --accent2:#fb7185; }
+
+/* More obvious color tint per card (keeps dark UI but adds hue) */
 .demoCard.theme-a,
 .demoCard.theme-b,
 .demoCard.theme-c,
 .demoCard.theme-d{
-  /* 保留彩色漸層，但底層改成白色玻璃，而不是深色玻璃 */
   background:
-    radial-gradient(620px 320px at 16% 12%, color-mix(in srgb, var(--accent) 20%, transparent), transparent 62%),
-    radial-gradient(620px 320px at 84% 18%, color-mix(in srgb, var(--accent2) 16%, transparent), transparent 66%),
-    rgba(255,255,255,.88) !important;
-
-  border-color: color-mix(in srgb, var(--accent) 18%, rgba(16,24,40,.14)) !important;
-
-  /* 陰影改淡，避免霧 */
+    radial-gradient(620px 320px at 16% 12%, color-mix(in srgb, var(--accent) 34%, transparent), transparent 62%),
+    radial-gradient(620px 320px at 84% 18%, color-mix(in srgb, var(--accent2) 26%, transparent), transparent 66%),
+    rgba(18,24,32,.58) !important;
+  border-color: color-mix(in srgb, var(--accent) 34%, white 0%) !important;
   box-shadow:
-    0 10px 26px rgba(16,24,40,.10),
-    0 0 0 1px rgba(255,255,255,.55) inset;
+    0 18px 60px rgba(0,0,0,.45),
+    0 0 0 1px rgba(255,255,255,.04) inset;
 }
 
-/* Tag pill 改成淺色底，不要黑底 */
+/* Tag pill tint */
 .demoCard.theme-a .tag,
 .demoCard.theme-b .tag,
 .demoCard.theme-c .tag,
 .demoCard.theme-d .tag{
-  border-color: color-mix(in srgb, var(--accent) 30%, rgba(16,24,40,.12));
-  background: color-mix(in srgb, var(--accent) 10%, rgba(255,255,255,.70));
-  color: var(--muted);
+  border-color: color-mix(in srgb, var(--accent) 55%, transparent);
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
 }
 
-/* Buttons 改成淺色底，不要黑底 */
+/* Buttons tint (View Demo / 操作說明) */
 .demoCard.theme-a .link,
 .demoCard.theme-b .link,
 .demoCard.theme-c .link,
 .demoCard.theme-d .link{
-  background: rgba(255,255,255,.72);
-  border-color: color-mix(in srgb, var(--accent) 35%, rgba(16,24,40,.12));
-  color: var(--text);
+  border-color: color-mix(in srgb, var(--accent) 55%, transparent);
 }
-
+.demoCard.theme-a .link:hover,
+.demoCard.theme-b .link:hover,
+.demoCard.theme-c .link:hover,
+.demoCard.theme-d .link:hover{
+  border-color: color-mix(in srgb, var(--accent) 80%, transparent);
+  transform: translateY(-1px);
+}
 
 </style>
 
